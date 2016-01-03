@@ -85,20 +85,42 @@ class CryptoPrephirencesTests: XCTestCase {
         let newDicoPref: MutableDictionaryPreferences = [:]
         do {
             try newDicoPref.loadFromEncryptedFile(filePath, cipher: cipher)
-            XCTAssertEqualPrepherences(newDicoPref, dicoPref)
+            XCTAssertEqualPreferences(newDicoPref, dicoPref)
         } catch let e {
             XCTFail("failed \(e)")
         }
         
         do {
             let initDicoPref = try DictionaryPreferences(filePath: filePath, cipher: cipher)
-            XCTAssertEqualPrepherences(initDicoPref, dicoPref)
+            XCTAssertEqualPreferences(initDicoPref, dicoPref)
         } catch let e {
             XCTFail("failed \(e)")
         }
     }
+    
+    func testCryptoPrephirences() {
+        let dicoPref: MutableDictionaryPreferences = [:]
+        var cryptoPreferences = MutableCryptoPrephirences(preferences: dicoPref, cipher: cipher)
+        
+        let tmp: MutableDictionaryPreferences = ["key": "value", "key2": "value2"]
+        cryptoPreferences.setObjectsForKeysWithDictionary(tmp.dictionary())
+        
+        XCTAssertEqualPreferences(cryptoPreferences, tmp)
 
-    func XCTAssertEqualPrepherences(left: PreferencesType,_ right: PreferencesType) {
+        // modify
+        cryptoPreferences["key3"] = "value3"
+        XCTAssertEqual("value3", cryptoPreferences["key3"] as? String ?? "dummy")
+
+        // check all data encrypted into original preferences
+        for (key, value) in dicoPref.dictionary() {
+            guard let _ = value as? NSData else {
+                XCTFail("not encrypted value for \(key)")
+                return
+            }
+        }
+    }
+
+    func XCTAssertEqualPreferences(left: PreferencesType,_ right: PreferencesType) {
         let ld = left.dictionary()
         let rd = right.dictionary()
         XCTAssertEqual(Array(ld.keys), Array(rd.keys), "not same keys")
@@ -115,6 +137,5 @@ class CryptoPrephirencesTests: XCTestCase {
                 XCTFail("cannot test with not Equable object")
             }
         }
-        
     }
 }

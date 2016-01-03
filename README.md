@@ -14,9 +14,9 @@
 [<img align="left" src="logo.png" hspace="20">](#logo) CryptoPrephirences allows you to protect your preferences against unauthorized access and modification.
 
 ```swift
-prephirences["aKey", .Cipher(cipher)] = "myValueToEncrypt"
+preferences["aKey", .Cipher(cipher)] = "myValueToEncrypt"
 ```
-It's build on top Prephirences and CryptoSwift
+It's build on top [Prephirences](https://github.com/phimage/Prephirences) and [CryptoSwift](https://github.com/krzyzanowskim/CryptoSwift)
 
 ## Installation
 
@@ -35,34 +35,36 @@ pod "CryptoPrephirences"
  To Encrypt and decrypt data, you will need a `CryptoSwift.Cipher`, see CryptoSwift documentation to create one.
 
 ### Encrypt/Decryp each key/value independently
-You can store one preference using
 
-```swift
-var prephirences = NSUserDefaults.standardUserDefaults()
-```
 #### Store any NSCoding object compliant
+You can store one preference using
 ```swift
-prephirences["aKey", .Cipher(cipher)] = value
+var preferences = NSUserDefaults.standardUserDefaults()
+preferences["aKey", .Cipher(cipher)] = value
 ```
 #### Get the decrypted value
 ```swift
-let value = prephirences[key, .Cipher(cipher)]
+let value = preferences[key, .Cipher(cipher)]
 ```
-
 ### Encrypted Plist file
 Using this method key and values will be encrypted.
 
 You can read and write your preferences to an encrypted file using :
 
-```
-try anyPrephirences.saveToEncryptedFile(filePath: "/path/to/file", cipher:cipher)
+```swift
+try anyPreferences.saveToEncryptedFile(filePath: "/path/to/file", cipher:cipher)
 
-try mutablePrephirences.loadFromEncryptedFile(filePath: "/path/to/file", cipher: cipher)
+try mutablePreferences.loadFromEncryptedFile(filePath: "/path/to/file", cipher: cipher)
 ```
-You can also initialize a `DictionaryPreferences`
+You can also initialize a `DictionaryPreferences` with `cipher`
 ```swift
 let pref = try DictionaryPreferences(filePath: filePath, cipher: cipher)
 ```
 
 ### Encrypted all values
-WIP
+You can use the `CryptoPrephirences`, which work as a proxy of another `Prephirences` and encrypt/decrypt using the given `cipher`
+
+```swift
+var cryptoPreferences = MutableCryptoPrephirences(preferences: mutablePreferences, cipher: cipher)
+// or for read-only CryptoPrephirences(preferences: anyPreferences, cipher: cipher)
+```

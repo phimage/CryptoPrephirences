@@ -26,3 +26,80 @@ SOFTWARE.
 */
 
 import Foundation
+import Prephirences
+import CryptoSwift
+
+public class CryptoPrephirences {
+
+    public let preferences: PreferencesType
+    public let cipher: Cipher
+    public var returnNotDecrytable = false
+
+    public init(preferences: PreferencesType, cipher: Cipher) {
+        self.preferences = preferences
+        self.cipher = cipher
+    }
+
+}
+
+extension CryptoPrephirences: PreferencesType {
+
+    public func objectForKey(key: String) -> AnyObject? {
+        guard let value = self.preferences.objectForKey(key) else {
+            return nil
+        }
+        guard let data = value as? NSData, decrypted = try? data.decrypt(cipher), object = Prephirences.unarchive(decrypted) else {
+            return self.returnNotDecrytable ? value : nil
+        }
+        return object
+    }
+
+    public func dictionary() -> [String : AnyObject] {
+        var result = [String : AnyObject]()
+        
+        for (key, value) in self.preferences.dictionary() {
+            
+            guard let data = value as? NSData, decrypted = try? data.decrypt(cipher), object = Prephirences.unarchive(decrypted) else {
+                if self.returnNotDecrytable {
+                    result[key] = value
+                }
+                continue
+            }
+            result[key] = object
+        }
+        
+        return result
+    }
+
+}
+
+public class MutableCryptoPrephirences: CryptoPrephirences {
+
+    public var mutablePreferences: MutablePreferencesType {
+        return self.preferences as! MutablePreferencesType
+    }
+
+    public init(preferences: MutablePreferencesType, cipher: Cipher) {
+        super.init(preferences: preferences, cipher: cipher)
+    }
+
+}
+
+extension MutableCryptoPrephirences: MutablePreferencesType {
+
+    public func setObject(value: AnyObject?, forKey key: String) {
+        guard let object = value else {
+            self.removeObjectForKey(key)
+            return
+        }
+        let data = Prephirences.archive(object)
+        if let encrypted = try? data.encrypt(cipher) {
+            self.mutablePreferences.setObject(encrypted, forKey: key)
+        }
+    }
+
+    public func removeObjectForKey(key: String) {
+        self.mutablePreferences.removeObjectForKey(key)
+    }
+
+}
