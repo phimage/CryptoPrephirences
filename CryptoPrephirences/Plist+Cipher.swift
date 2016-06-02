@@ -35,7 +35,7 @@ public enum CryptoPrephirencesError: ErrorType {
 
 public extension Plist {
 
-    public static func readFrom(filePath: String, cipher: CryptoSwift.Cipher, options opt: NSPropertyListReadOptions = .MutableContainersAndLeaves, format: UnsafeMutablePointer<NSPropertyListFormat> = nil, readOptionsMask: NSDataReadingOptions = []) throws -> Dictionary<String,AnyObject>  {
+    public static func readFrom(filePath: String, cipher: CryptoSwift.CipherProtocol, options opt: NSPropertyListReadOptions = .MutableContainersAndLeaves, format: UnsafeMutablePointer<NSPropertyListFormat> = nil, readOptionsMask: NSDataReadingOptions = []) throws -> Dictionary<String,AnyObject>  {
         let encrypted = try NSData(contentsOfFile: filePath, options: readOptionsMask)
         let decrypted = try encrypted.decrypt(cipher)
         
@@ -46,7 +46,7 @@ public extension Plist {
         return dictionary
     }
 
-    public static func writeTo(filePath: String, cipher: CryptoSwift.Cipher, dictionary: Dictionary<String,AnyObject>, format: NSPropertyListFormat = NSPropertyListFormat.XMLFormat_v1_0, options opt: NSPropertyListWriteOptions = 0, writeOptionMask: NSDataWritingOptions = .AtomicWrite) throws {
+    public static func writeTo(filePath: String, cipher: CryptoSwift.CipherProtocol, dictionary: Dictionary<String,AnyObject>, format: NSPropertyListFormat = NSPropertyListFormat.XMLFormat_v1_0, options opt: NSPropertyListWriteOptions = 0, writeOptionMask: NSDataWritingOptions = .AtomicWrite) throws {
         
         let decrypted = try NSPropertyListSerialization.dataWithPropertyList(dictionary, format: format, options: opt)
 
@@ -57,7 +57,7 @@ public extension Plist {
 
 public extension DictionaryPreferences {
 
-    public convenience init(filePath: String, cipher: CryptoSwift.Cipher) throws {
+    public convenience init(filePath: String, cipher: CryptoSwift.CipherProtocol) throws {
         let dictionary = try Plist.readFrom(filePath, cipher: cipher)
         self.init(dictionary: dictionary)
     }
@@ -66,7 +66,7 @@ public extension DictionaryPreferences {
 
 extension PreferencesType {
     
-    public func saveToEncryptedFile(filePath: String, cipher: CryptoSwift.Cipher) throws {
+    public func saveToEncryptedFile(filePath: String, cipher: CryptoSwift.CipherProtocol) throws {
         try Plist.writeTo(filePath, cipher: cipher, dictionary: self.dictionary())
     }
  
@@ -74,7 +74,7 @@ extension PreferencesType {
 
 extension MutablePreferencesType {
     
-    public func loadFromEncryptedFile(filePath: String, cipher: CryptoSwift.Cipher) throws {
+    public func loadFromEncryptedFile(filePath: String, cipher: CryptoSwift.CipherProtocol) throws {
         let dictionary = try Plist.readFrom(filePath, cipher: cipher)
         self.setObjectsForKeysWithDictionary(dictionary)
     }

@@ -32,10 +32,10 @@ import CryptoSwift
 public class CryptoPrephirences {
 
     public let preferences: PreferencesType
-    public let cipher: Cipher
+    public let cipher: CipherProtocol
     public var returnNotDecrytable = false
 
-    public init(preferences: PreferencesType, cipher: Cipher) {
+    public init(preferences: PreferencesType, cipher: CipherProtocol) {
         self.preferences = preferences
         self.cipher = cipher
     }
@@ -79,7 +79,7 @@ public class MutableCryptoPrephirences: CryptoPrephirences {
         return self.preferences as! MutablePreferencesType
     }
 
-    public init(preferences: MutablePreferencesType, cipher: Cipher) {
+    public init(preferences: MutablePreferencesType, cipher: CipherProtocol) {
         super.init(preferences: preferences, cipher: cipher)
     }
 

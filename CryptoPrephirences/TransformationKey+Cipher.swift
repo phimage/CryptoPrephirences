@@ -31,7 +31,7 @@ import CryptoSwift
 
 public extension TransformationKey {
 
-    public static func Cipher(cipher: CryptoSwift.Cipher) -> TransformationKey {
+    public static func Cipher(cipher: CryptoSwift.CipherProtocol) -> TransformationKey {
         return TransformationKey.ClosureTuple((
             transform: { obj in
                 guard let object = obj else {
