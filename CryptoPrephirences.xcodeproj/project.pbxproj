@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B07CBFC70BF2DE211E8C4A5 /* Pods_CryptoPrephirencesTVOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0070D813061BCEE3FE1DD356 /* Pods_CryptoPrephirencesTVOS.framework */; };
+		4E3AF30AD8E2E8CE6F5E23FB /* Pods_CryptoPrephirencesOSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6555F7877056B432FAF3AB5 /* Pods_CryptoPrephirencesOSX.framework */; };
 		6CE6DE43F7F58585D0028404 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A996A05D950AD71E21DE85 /* Pods.framework */; };
+		97AF4EE2681E6587C713305F /* Pods_CryptoPrephirences.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF6BF09FE71E02F3642B68B /* Pods_CryptoPrephirences.framework */; };
 		C413684E1C35368300A6A63D /* CryptoPrephirences.h in Headers */ = {isa = PBXBuildFile; fileRef = C413684D1C35368300A6A63D /* CryptoPrephirences.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C41368551C35368300A6A63D /* CryptoPrephirences.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C413684A1C35368300A6A63D /* CryptoPrephirences.framework */; };
 		C413685A1C35368300A6A63D /* CryptoPrephirencesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41368591C35368300A6A63D /* CryptoPrephirencesTests.swift */; };
@@ -35,9 +38,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0070D813061BCEE3FE1DD356 /* Pods_CryptoPrephirencesTVOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoPrephirencesTVOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BF6BF09FE71E02F3642B68B /* Pods_CryptoPrephirences.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoPrephirences.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		32622DB6CC40290B32FEE29D /* Pods-CryptoPrephirences.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoPrephirences.release.xcconfig"; path = "Pods/Target Support Files/Pods-CryptoPrephirences/Pods-CryptoPrephirences.release.xcconfig"; sourceTree = "<group>"; };
+		6A0182561BCE8A97DBD7B708 /* Pods-CryptoPrephirencesOSX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoPrephirencesOSX.release.xcconfig"; path = "Pods/Target Support Files/Pods-CryptoPrephirencesOSX/Pods-CryptoPrephirencesOSX.release.xcconfig"; sourceTree = "<group>"; };
+		6A04BE68668D8EEC00D26572 /* Pods-CryptoPrephirencesTVOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoPrephirencesTVOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-CryptoPrephirencesTVOS/Pods-CryptoPrephirencesTVOS.release.xcconfig"; sourceTree = "<group>"; };
+		7CB6899EAD5BB728171F6341 /* Pods-CryptoPrephirencesTVOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoPrephirencesTVOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CryptoPrephirencesTVOS/Pods-CryptoPrephirencesTVOS.debug.xcconfig"; sourceTree = "<group>"; };
 		80D5F1F1E3B699862EED12FF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		90EF44E640DB081525C33F65 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		A0A996A05D950AD71E21DE85 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6555F7877056B432FAF3AB5 /* Pods_CryptoPrephirencesOSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoPrephirencesOSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C413684A1C35368300A6A63D /* CryptoPrephirences.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CryptoPrephirences.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C413684D1C35368300A6A63D /* CryptoPrephirences.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CryptoPrephirences.h; sourceTree = "<group>"; };
 		C413684F1C35368300A6A63D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,6 +63,8 @@
 		C413687E1C353BCE00A6A63D /* TransformationKey+Cipher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TransformationKey+Cipher.swift"; sourceTree = "<group>"; };
 		C41F998B1C354A510046BA2C /* Plist+Cipher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Plist+Cipher.swift"; sourceTree = "<group>"; };
 		C41F998F1C3554CB0046BA2C /* CryptoPrephirences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoPrephirences.swift; sourceTree = "<group>"; };
+		CA93D3C8ED3FFAD6A4E6B73D /* Pods-CryptoPrephirencesOSX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoPrephirencesOSX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CryptoPrephirencesOSX/Pods-CryptoPrephirencesOSX.debug.xcconfig"; sourceTree = "<group>"; };
+		E672E528A1182EC3E343B4BC /* Pods-CryptoPrephirences.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoPrephirences.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CryptoPrephirences/Pods-CryptoPrephirences.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +73,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6CE6DE43F7F58585D0028404 /* Pods.framework in Frameworks */,
+				97AF4EE2681E6587C713305F /* Pods_CryptoPrephirences.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E3AF30AD8E2E8CE6F5E23FB /* Pods_CryptoPrephirencesOSX.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B07CBFC70BF2DE211E8C4A5 /* Pods_CryptoPrephirencesTVOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +108,9 @@
 			isa = PBXGroup;
 			children = (
 				A0A996A05D950AD71E21DE85 /* Pods.framework */,
+				0BF6BF09FE71E02F3642B68B /* Pods_CryptoPrephirences.framework */,
+				A6555F7877056B432FAF3AB5 /* Pods_CryptoPrephirencesOSX.framework */,
+				0070D813061BCEE3FE1DD356 /* Pods_CryptoPrephirencesTVOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -102,6 +120,12 @@
 			children = (
 				90EF44E640DB081525C33F65 /* Pods.debug.xcconfig */,
 				80D5F1F1E3B699862EED12FF /* Pods.release.xcconfig */,
+				E672E528A1182EC3E343B4BC /* Pods-CryptoPrephirences.debug.xcconfig */,
+				32622DB6CC40290B32FEE29D /* Pods-CryptoPrephirences.release.xcconfig */,
+				CA93D3C8ED3FFAD6A4E6B73D /* Pods-CryptoPrephirencesOSX.debug.xcconfig */,
+				6A0182561BCE8A97DBD7B708 /* Pods-CryptoPrephirencesOSX.release.xcconfig */,
+				7CB6899EAD5BB728171F6341 /* Pods-CryptoPrephirencesTVOS.debug.xcconfig */,
+				6A04BE68668D8EEC00D26572 /* Pods-CryptoPrephirencesTVOS.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -203,12 +227,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C413685E1C35368300A6A63D /* Build configuration list for PBXNativeTarget "CryptoPrephirences" */;
 			buildPhases = (
-				3120733A3F1B2DD07DD56FE8 /* Check Pods Manifest.lock */,
+				3120733A3F1B2DD07DD56FE8 /* [CP] Check Pods Manifest.lock */,
 				C41368451C35368300A6A63D /* Sources */,
 				C41368461C35368300A6A63D /* Frameworks */,
 				C41368471C35368300A6A63D /* Headers */,
 				C41368481C35368300A6A63D /* Resources */,
-				FE11135E3B67C04C5C738913 /* Copy Pods Resources */,
+				FE11135E3B67C04C5C738913 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -241,10 +265,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C413686E1C35369D00A6A63D /* Build configuration list for PBXNativeTarget "CryptoPrephirencesOSX" */;
 			buildPhases = (
+				4C1565FE25C5498AD9EEDADA /* [CP] Check Pods Manifest.lock */,
 				C41368641C35369D00A6A63D /* Sources */,
 				C41368651C35369D00A6A63D /* Frameworks */,
 				C41368661C35369D00A6A63D /* Headers */,
 				C41368671C35369D00A6A63D /* Resources */,
+				266BE72602A41089386BADED /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -259,10 +285,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C413687B1C3536B900A6A63D /* Build configuration list for PBXNativeTarget "CryptoPrephirencesTVOS" */;
 			buildPhases = (
+				560C716AB8CF8A4133256236 /* [CP] Check Pods Manifest.lock */,
 				C41368711C3536B900A6A63D /* Sources */,
 				C41368721C3536B900A6A63D /* Frameworks */,
 				C41368731C3536B900A6A63D /* Headers */,
 				C41368741C3536B900A6A63D /* Resources */,
+				D1FD35DB065E03B66528FA7B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -349,14 +377,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3120733A3F1B2DD07DD56FE8 /* Check Pods Manifest.lock */ = {
+		266BE72602A41089386BADED /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CryptoPrephirencesOSX/Pods-CryptoPrephirencesOSX-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3120733A3F1B2DD07DD56FE8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -364,19 +407,64 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		FE11135E3B67C04C5C738913 /* Copy Pods Resources */ = {
+		4C1565FE25C5498AD9EEDADA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		560C716AB8CF8A4133256236 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D1FD35DB065E03B66528FA7B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CryptoPrephirencesTVOS/Pods-CryptoPrephirencesTVOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE11135E3B67C04C5C738913 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CryptoPrephirences/Pods-CryptoPrephirences-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -522,7 +610,7 @@
 		};
 		C413685F1C35368300A6A63D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 90EF44E640DB081525C33F65 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = E672E528A1182EC3E343B4BC /* Pods-CryptoPrephirences.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
@@ -541,7 +629,7 @@
 		};
 		C41368601C35368300A6A63D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 80D5F1F1E3B699862EED12FF /* Pods.release.xcconfig */;
+			baseConfigurationReference = 32622DB6CC40290B32FEE29D /* Pods-CryptoPrephirences.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
@@ -579,6 +667,7 @@
 		};
 		C413686F1C35369D00A6A63D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA93D3C8ED3FFAD6A4E6B73D /* Pods-CryptoPrephirencesOSX.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -602,6 +691,7 @@
 		};
 		C41368701C35369D00A6A63D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A0182561BCE8A97DBD7B708 /* Pods-CryptoPrephirencesOSX.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -624,6 +714,7 @@
 		};
 		C413687C1C3536B900A6A63D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CB6899EAD5BB728171F6341 /* Pods-CryptoPrephirencesTVOS.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
@@ -645,6 +736,7 @@
 		};
 		C413687D1C3536B900A6A63D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A04BE68668D8EEC00D26572 /* Pods-CryptoPrephirencesTVOS.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;

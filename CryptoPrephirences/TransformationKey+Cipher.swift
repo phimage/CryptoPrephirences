@@ -32,9 +32,9 @@ import CryptoSwift
 public extension TransformationKey {
 
     public static func Cipher(cipher: CryptoSwift.Cipher) -> TransformationKey {
-        return TransformationKey.ClosureTuple((
+        return TransformationKey.ClosureTuple(
             transform: { obj in
-                guard let object = obj else {
+                guard let object = obj as? AnyObject else {
                     return nil
                 }
                 let data = Prephirences.archive(object)
@@ -51,7 +51,7 @@ public extension TransformationKey {
                 }
                 return nil // rethrows not supported in subscript yet
             }
-        ))
+        )
     }
 
 }
