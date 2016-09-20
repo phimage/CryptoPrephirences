@@ -4,7 +4,7 @@
 /*
 The MIT License (MIT)
 
-Copyright (c) 2015 Eric Marchand (phimage)
+Copyright (c) 2015-2016 Eric Marchand (phimage)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -31,22 +31,22 @@ import CryptoSwift
 
 public extension TransformationKey {
 
-    public static func Cipher(cipher: CryptoSwift.Cipher) -> TransformationKey {
-        return TransformationKey.ClosureTuple(
+    public static func cipher(_ cipher: CryptoSwift.Cipher) -> TransformationKey {
+        return TransformationKey.closureTuple(
             transform: { obj in
-                guard let object = obj as? AnyObject else {
+                guard let object = obj else {
                     return nil
                 }
                 let data = Prephirences.archive(object)
-                if let encrypted = try? data.encrypt(cipher) {
+                if let encrypted = try? data.encrypt(cipher: cipher) {
                     return encrypted
                 }
                 return nil // rethrows not supported in subscript yet
             }, revert: { obj in
-                guard let data = obj as? NSData else {
+                guard let data = obj as? Data else {
                     return obj
                 }
-                if let decrypted = try? data.decrypt(cipher) {
+                if let decrypted = try? data.decrypt(cipher: cipher) {
                     return Prephirences.unarchive(decrypted)
                 }
                 return nil // rethrows not supported in subscript yet

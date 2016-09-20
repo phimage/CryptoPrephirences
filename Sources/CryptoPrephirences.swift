@@ -4,7 +4,7 @@
 /*
 The MIT License (MIT)
 
-Copyright (c) 2015 Eric Marchand (phimage)
+Copyright (c) 2015-2016 Eric Marchand (phimage)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -29,11 +29,11 @@ import Foundation
 import Prephirences
 import CryptoSwift
 
-public class CryptoPrephirences {
+open class CryptoPrephirences {
 
-    public let preferences: PreferencesType
-    public let cipher: Cipher
-    public var returnNotDecrytable = false
+    open let preferences: PreferencesType
+    open let cipher: Cipher
+    open var returnNotDecrytable = false
 
     public init(preferences: PreferencesType, cipher: Cipher) {
         self.preferences = preferences
@@ -44,22 +44,22 @@ public class CryptoPrephirences {
 
 extension CryptoPrephirences: PreferencesType {
 
-    public func objectForKey(key: String) -> AnyObject? {
-        guard let value = self.preferences.objectForKey(key) else {
+    public func object(forKey key: String) -> Any? {
+        guard let value = self.preferences.object(forKey: key) else {
             return nil
         }
-        guard let data = value as? NSData, decrypted = try? data.decrypt(cipher), object = Prephirences.unarchive(decrypted) else {
+        guard let data = value as? Data, let decrypted = try? data.decrypt(cipher: cipher), let object = Prephirences.unarchive(decrypted) else {
             return self.returnNotDecrytable ? value : nil
         }
         return object
     }
 
-    public func dictionary() -> [String : AnyObject] {
-        var result = [String : AnyObject]()
+    public func dictionary() -> [String : Any] {
+        var result = [String : Any]()
         
         for (key, value) in self.preferences.dictionary() {
             
-            guard let data = value as? NSData, decrypted = try? data.decrypt(cipher), object = Prephirences.unarchive(decrypted) else {
+            guard let data = value as? Data, let decrypted = try? data.decrypt(cipher: cipher), let object = Prephirences.unarchive(decrypted) else {
                 if self.returnNotDecrytable {
                     result[key] = value
                 }
@@ -73,7 +73,7 @@ extension CryptoPrephirences: PreferencesType {
 
 }
 
-public class MutableCryptoPrephirences: CryptoPrephirences {
+open class MutableCryptoPrephirences: CryptoPrephirences {
 
     public var mutablePreferences: MutablePreferencesType {
         return self.preferences as! MutablePreferencesType
@@ -87,19 +87,48 @@ public class MutableCryptoPrephirences: CryptoPrephirences {
 
 extension MutableCryptoPrephirences: MutablePreferencesType {
 
-    public func setObject(value: AnyObject?, forKey key: String) {
+    public func set(_ value: Any?, forKey key: String) {
         guard let object = value else {
-            self.removeObjectForKey(key)
+            self.removeObject(forKey: key)
             return
         }
         let data = Prephirences.archive(object)
-        if let encrypted = try? data.encrypt(cipher) {
-            self.mutablePreferences.setObject(encrypted, forKey: key)
+        if let encrypted = try? data.encrypt(cipher: cipher) {
+            self.mutablePreferences.set(encrypted, forKey: key)
         }
     }
 
-    public func removeObjectForKey(key: String) {
-        self.mutablePreferences.removeObjectForKey(key)
+    public func removeObject(forKey key: String) {
+        self.mutablePreferences.removeObject(forKey: key)
     }
 
 }
+
+public extension MutablePreferencesType {
+    
+    public func set(_ value: Any?, forKey key: String, withCipher cipher: Cipher) {
+        guard let object = value else {
+            self.removeObject(forKey: key)
+            return
+        }
+        let data = Prephirences.archive(object)
+        if let encrypted = try? data.encrypt(cipher: cipher) {
+            self.set(encrypted, forKey: key)
+        }
+    }
+
+}
+
+extension CryptoPrephirences {
+    
+    public func object(forKey key: String, withCipher cipher: Cipher) -> Any? {
+        guard let value = self.preferences.object(forKey: key) else {
+            return nil
+        }
+        guard let data = value as? Data, let decrypted = try? data.decrypt(cipher: cipher), let object = Prephirences.unarchive(decrypted) else {
+            return self.returnNotDecrytable ? value : nil
+        }
+        return object
+    }
+}
+

@@ -7,24 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1B07CBFC70BF2DE211E8C4A5 /* Pods_CryptoPrephirencesTVOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0070D813061BCEE3FE1DD356 /* Pods_CryptoPrephirencesTVOS.framework */; };
-		4E3AF30AD8E2E8CE6F5E23FB /* Pods_CryptoPrephirencesOSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6555F7877056B432FAF3AB5 /* Pods_CryptoPrephirencesOSX.framework */; };
-		6CE6DE43F7F58585D0028404 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A996A05D950AD71E21DE85 /* Pods.framework */; };
-		97AF4EE2681E6587C713305F /* Pods_CryptoPrephirences.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF6BF09FE71E02F3642B68B /* Pods_CryptoPrephirences.framework */; };
 		C413684E1C35368300A6A63D /* CryptoPrephirences.h in Headers */ = {isa = PBXBuildFile; fileRef = C413684D1C35368300A6A63D /* CryptoPrephirences.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C41368551C35368300A6A63D /* CryptoPrephirences.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C413684A1C35368300A6A63D /* CryptoPrephirences.framework */; };
 		C413685A1C35368300A6A63D /* CryptoPrephirencesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41368591C35368300A6A63D /* CryptoPrephirencesTests.swift */; };
 		C413686C1C35369D00A6A63D /* CryptoPrephirencesOSX.h in Headers */ = {isa = PBXBuildFile; fileRef = C413686B1C35369D00A6A63D /* CryptoPrephirencesOSX.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C41368791C3536B900A6A63D /* CryptoPrephirencesTVOS.h in Headers */ = {isa = PBXBuildFile; fileRef = C41368781C3536B900A6A63D /* CryptoPrephirencesTVOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C413687F1C353BCE00A6A63D /* TransformationKey+Cipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C413687E1C353BCE00A6A63D /* TransformationKey+Cipher.swift */; };
-		C41368801C353BCE00A6A63D /* TransformationKey+Cipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C413687E1C353BCE00A6A63D /* TransformationKey+Cipher.swift */; };
-		C41368811C353BCE00A6A63D /* TransformationKey+Cipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C413687E1C353BCE00A6A63D /* TransformationKey+Cipher.swift */; };
-		C41F998C1C354A510046BA2C /* Plist+Cipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41F998B1C354A510046BA2C /* Plist+Cipher.swift */; };
-		C41F998D1C354A510046BA2C /* Plist+Cipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41F998B1C354A510046BA2C /* Plist+Cipher.swift */; };
-		C41F998E1C354A510046BA2C /* Plist+Cipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41F998B1C354A510046BA2C /* Plist+Cipher.swift */; };
-		C41F99901C3554CB0046BA2C /* CryptoPrephirences.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41F998F1C3554CB0046BA2C /* CryptoPrephirences.swift */; };
-		C41F99911C3554CB0046BA2C /* CryptoPrephirences.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41F998F1C3554CB0046BA2C /* CryptoPrephirences.swift */; };
-		C41F99921C3554CB0046BA2C /* CryptoPrephirences.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41F998F1C3554CB0046BA2C /* CryptoPrephirences.swift */; };
+		C4BC15BE1D84552C00D10F10 /* CryptoPrephirences.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BC15BB1D84552C00D10F10 /* CryptoPrephirences.swift */; };
+		C4BC15BF1D84552C00D10F10 /* CryptoPrephirences.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BC15BB1D84552C00D10F10 /* CryptoPrephirences.swift */; };
+		C4BC15C01D84552C00D10F10 /* CryptoPrephirences.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BC15BB1D84552C00D10F10 /* CryptoPrephirences.swift */; };
+		C4BC15C11D84552C00D10F10 /* Plist+Cipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BC15BC1D84552C00D10F10 /* Plist+Cipher.swift */; };
+		C4BC15C21D84552C00D10F10 /* Plist+Cipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BC15BC1D84552C00D10F10 /* Plist+Cipher.swift */; };
+		C4BC15C31D84552C00D10F10 /* Plist+Cipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BC15BC1D84552C00D10F10 /* Plist+Cipher.swift */; };
+		C4BC15C41D84552C00D10F10 /* TransformationKey+Cipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BC15BD1D84552C00D10F10 /* TransformationKey+Cipher.swift */; };
+		C4BC15C51D84552C00D10F10 /* TransformationKey+Cipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BC15BD1D84552C00D10F10 /* TransformationKey+Cipher.swift */; };
+		C4BC15C61D84552C00D10F10 /* TransformationKey+Cipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BC15BD1D84552C00D10F10 /* TransformationKey+Cipher.swift */; };
+		C4C26D3F1D912FF8003C0D04 /* Prephirences.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4C26D3E1D912FF8003C0D04 /* Prephirences.framework */; };
+		C4C26D411D91315B003C0D04 /* CryptoPrephirences.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C413684A1C35368300A6A63D /* CryptoPrephirences.framework */; };
+		C4C26D431D9131D5003C0D04 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4E5715F1D9120D10062A6D7 /* CryptoSwift.framework */; };
+		C4C26D441D9131D7003C0D04 /* Prephirences.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4E571601D9120D10062A6D7 /* Prephirences.framework */; };
+		C4E571611D9120D10062A6D7 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4E5715F1D9120D10062A6D7 /* CryptoSwift.framework */; };
+		C4E571621D9120D10062A6D7 /* Prephirences.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4E571601D9120D10062A6D7 /* Prephirences.framework */; };
+		C4E571661D9120EF0062A6D7 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4E571641D9120EF0062A6D7 /* CryptoSwift.framework */; };
+		C4E571671D9120EF0062A6D7 /* Prephirences.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4E571651D9120EF0062A6D7 /* Prephirences.framework */; };
+		C4E5716A1D91210D0062A6D7 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4E571691D91210D0062A6D7 /* CryptoSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,16 +42,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0070D813061BCEE3FE1DD356 /* Pods_CryptoPrephirencesTVOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoPrephirencesTVOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0BF6BF09FE71E02F3642B68B /* Pods_CryptoPrephirences.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoPrephirences.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		32622DB6CC40290B32FEE29D /* Pods-CryptoPrephirences.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoPrephirences.release.xcconfig"; path = "Pods/Target Support Files/Pods-CryptoPrephirences/Pods-CryptoPrephirences.release.xcconfig"; sourceTree = "<group>"; };
-		6A0182561BCE8A97DBD7B708 /* Pods-CryptoPrephirencesOSX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoPrephirencesOSX.release.xcconfig"; path = "Pods/Target Support Files/Pods-CryptoPrephirencesOSX/Pods-CryptoPrephirencesOSX.release.xcconfig"; sourceTree = "<group>"; };
-		6A04BE68668D8EEC00D26572 /* Pods-CryptoPrephirencesTVOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoPrephirencesTVOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-CryptoPrephirencesTVOS/Pods-CryptoPrephirencesTVOS.release.xcconfig"; sourceTree = "<group>"; };
-		7CB6899EAD5BB728171F6341 /* Pods-CryptoPrephirencesTVOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoPrephirencesTVOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CryptoPrephirencesTVOS/Pods-CryptoPrephirencesTVOS.debug.xcconfig"; sourceTree = "<group>"; };
-		80D5F1F1E3B699862EED12FF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		90EF44E640DB081525C33F65 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		A0A996A05D950AD71E21DE85 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A6555F7877056B432FAF3AB5 /* Pods_CryptoPrephirencesOSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoPrephirencesOSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C413684A1C35368300A6A63D /* CryptoPrephirences.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CryptoPrephirences.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C413684D1C35368300A6A63D /* CryptoPrephirences.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CryptoPrephirences.h; sourceTree = "<group>"; };
 		C413684F1C35368300A6A63D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -60,11 +54,15 @@
 		C41368761C3536B900A6A63D /* CryptoPrephirences.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CryptoPrephirences.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C41368781C3536B900A6A63D /* CryptoPrephirencesTVOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CryptoPrephirencesTVOS.h; sourceTree = "<group>"; };
 		C413687A1C3536B900A6A63D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C413687E1C353BCE00A6A63D /* TransformationKey+Cipher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TransformationKey+Cipher.swift"; sourceTree = "<group>"; };
-		C41F998B1C354A510046BA2C /* Plist+Cipher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Plist+Cipher.swift"; sourceTree = "<group>"; };
-		C41F998F1C3554CB0046BA2C /* CryptoPrephirences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoPrephirences.swift; sourceTree = "<group>"; };
-		CA93D3C8ED3FFAD6A4E6B73D /* Pods-CryptoPrephirencesOSX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoPrephirencesOSX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CryptoPrephirencesOSX/Pods-CryptoPrephirencesOSX.debug.xcconfig"; sourceTree = "<group>"; };
-		E672E528A1182EC3E343B4BC /* Pods-CryptoPrephirences.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoPrephirences.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CryptoPrephirences/Pods-CryptoPrephirences.debug.xcconfig"; sourceTree = "<group>"; };
+		C4BC15BB1D84552C00D10F10 /* CryptoPrephirences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoPrephirences.swift; sourceTree = "<group>"; };
+		C4BC15BC1D84552C00D10F10 /* Plist+Cipher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Plist+Cipher.swift"; sourceTree = "<group>"; };
+		C4BC15BD1D84552C00D10F10 /* TransformationKey+Cipher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TransformationKey+Cipher.swift"; sourceTree = "<group>"; };
+		C4C26D3E1D912FF8003C0D04 /* Prephirences.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Prephirences.framework; path = Carthage/Build/tvOS/Prephirences.framework; sourceTree = "<group>"; };
+		C4E5715F1D9120D10062A6D7 /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = Carthage/Build/iOS/CryptoSwift.framework; sourceTree = "<group>"; };
+		C4E571601D9120D10062A6D7 /* Prephirences.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Prephirences.framework; path = Carthage/Build/iOS/Prephirences.framework; sourceTree = "<group>"; };
+		C4E571641D9120EF0062A6D7 /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = Carthage/Build/Mac/CryptoSwift.framework; sourceTree = "<group>"; };
+		C4E571651D9120EF0062A6D7 /* Prephirences.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Prephirences.framework; path = Carthage/Build/Mac/Prephirences.framework; sourceTree = "<group>"; };
+		C4E571691D91210D0062A6D7 /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = Carthage/Build/tvOS/CryptoSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,8 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6CE6DE43F7F58585D0028404 /* Pods.framework in Frameworks */,
-				97AF4EE2681E6587C713305F /* Pods_CryptoPrephirences.framework in Frameworks */,
+				C4E571621D9120D10062A6D7 /* Prephirences.framework in Frameworks */,
+				C4E571611D9120D10062A6D7 /* CryptoSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,7 +79,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C41368551C35368300A6A63D /* CryptoPrephirences.framework in Frameworks */,
+				C4C26D411D91315B003C0D04 /* CryptoPrephirences.framework in Frameworks */,
+				C4C26D431D9131D5003C0D04 /* CryptoSwift.framework in Frameworks */,
+				C4C26D441D9131D7003C0D04 /* Prephirences.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,7 +89,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E3AF30AD8E2E8CE6F5E23FB /* Pods_CryptoPrephirencesOSX.framework in Frameworks */,
+				C4E571671D9120EF0062A6D7 /* Prephirences.framework in Frameworks */,
+				C4E571661D9120EF0062A6D7 /* CryptoSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,49 +98,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B07CBFC70BF2DE211E8C4A5 /* Pods_CryptoPrephirencesTVOS.framework in Frameworks */,
+				C4C26D3F1D912FF8003C0D04 /* Prephirences.framework in Frameworks */,
+				C4E5716A1D91210D0062A6D7 /* CryptoSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		21BDDC53EFC15A2426037507 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				A0A996A05D950AD71E21DE85 /* Pods.framework */,
-				0BF6BF09FE71E02F3642B68B /* Pods_CryptoPrephirences.framework */,
-				A6555F7877056B432FAF3AB5 /* Pods_CryptoPrephirencesOSX.framework */,
-				0070D813061BCEE3FE1DD356 /* Pods_CryptoPrephirencesTVOS.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		7B10CA15D7AE8125F0920F34 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				90EF44E640DB081525C33F65 /* Pods.debug.xcconfig */,
-				80D5F1F1E3B699862EED12FF /* Pods.release.xcconfig */,
-				E672E528A1182EC3E343B4BC /* Pods-CryptoPrephirences.debug.xcconfig */,
-				32622DB6CC40290B32FEE29D /* Pods-CryptoPrephirences.release.xcconfig */,
-				CA93D3C8ED3FFAD6A4E6B73D /* Pods-CryptoPrephirencesOSX.debug.xcconfig */,
-				6A0182561BCE8A97DBD7B708 /* Pods-CryptoPrephirencesOSX.release.xcconfig */,
-				7CB6899EAD5BB728171F6341 /* Pods-CryptoPrephirencesTVOS.debug.xcconfig */,
-				6A04BE68668D8EEC00D26572 /* Pods-CryptoPrephirencesTVOS.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		C41368401C35368300A6A63D = {
 			isa = PBXGroup;
 			children = (
-				C413684C1C35368300A6A63D /* CryptoPrephirences */,
+				C4BC15BA1D84552C00D10F10 /* Sources */,
 				C41368581C35368300A6A63D /* CryptoPrephirencesTests */,
-				C413686A1C35369D00A6A63D /* CryptoPrephirencesOSX */,
-				C41368771C3536B900A6A63D /* CryptoPrephirencesTVOS */,
+				C4C26D451D91331F003C0D04 /* Targets */,
+				C4E5715D1D9120B20062A6D7 /* Frameworks */,
 				C413684B1C35368300A6A63D /* Products */,
-				7B10CA15D7AE8125F0920F34 /* Pods */,
-				21BDDC53EFC15A2426037507 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -157,9 +131,6 @@
 		C413684C1C35368300A6A63D /* CryptoPrephirences */ = {
 			isa = PBXGroup;
 			children = (
-				C41F998F1C3554CB0046BA2C /* CryptoPrephirences.swift */,
-				C413687E1C353BCE00A6A63D /* TransformationKey+Cipher.swift */,
-				C41F998B1C354A510046BA2C /* Plist+Cipher.swift */,
 				C413684D1C35368300A6A63D /* CryptoPrephirences.h */,
 				C413684F1C35368300A6A63D /* Info.plist */,
 			);
@@ -191,6 +162,63 @@
 				C413687A1C3536B900A6A63D /* Info.plist */,
 			);
 			path = CryptoPrephirencesTVOS;
+			sourceTree = "<group>";
+		};
+		C4BC15BA1D84552C00D10F10 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C4BC15BB1D84552C00D10F10 /* CryptoPrephirences.swift */,
+				C4BC15BC1D84552C00D10F10 /* Plist+Cipher.swift */,
+				C4BC15BD1D84552C00D10F10 /* TransformationKey+Cipher.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		C4C26D451D91331F003C0D04 /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				C41368771C3536B900A6A63D /* CryptoPrephirencesTVOS */,
+				C413686A1C35369D00A6A63D /* CryptoPrephirencesOSX */,
+				C413684C1C35368300A6A63D /* CryptoPrephirences */,
+			);
+			name = Targets;
+			sourceTree = "<group>";
+		};
+		C4E5715D1D9120B20062A6D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4E571681D9120F80062A6D7 /* tvOS */,
+				C4E571631D9120E00062A6D7 /* Mac */,
+				C4E5715E1D9120C40062A6D7 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C4E5715E1D9120C40062A6D7 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				C4E5715F1D9120D10062A6D7 /* CryptoSwift.framework */,
+				C4E571601D9120D10062A6D7 /* Prephirences.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C4E571631D9120E00062A6D7 /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				C4E571641D9120EF0062A6D7 /* CryptoSwift.framework */,
+				C4E571651D9120EF0062A6D7 /* Prephirences.framework */,
+			);
+			name = Mac;
+			sourceTree = "<group>";
+		};
+		C4E571681D9120F80062A6D7 /* tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				C4C26D3E1D912FF8003C0D04 /* Prephirences.framework */,
+				C4E571691D91210D0062A6D7 /* CryptoSwift.framework */,
+			);
+			name = tvOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,12 +255,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C413685E1C35368300A6A63D /* Build configuration list for PBXNativeTarget "CryptoPrephirences" */;
 			buildPhases = (
-				3120733A3F1B2DD07DD56FE8 /* [CP] Check Pods Manifest.lock */,
 				C41368451C35368300A6A63D /* Sources */,
 				C41368461C35368300A6A63D /* Frameworks */,
 				C41368471C35368300A6A63D /* Headers */,
 				C41368481C35368300A6A63D /* Resources */,
-				FE11135E3B67C04C5C738913 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,12 +291,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C413686E1C35369D00A6A63D /* Build configuration list for PBXNativeTarget "CryptoPrephirencesOSX" */;
 			buildPhases = (
-				4C1565FE25C5498AD9EEDADA /* [CP] Check Pods Manifest.lock */,
 				C41368641C35369D00A6A63D /* Sources */,
 				C41368651C35369D00A6A63D /* Frameworks */,
 				C41368661C35369D00A6A63D /* Headers */,
 				C41368671C35369D00A6A63D /* Resources */,
-				266BE72602A41089386BADED /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -285,12 +309,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C413687B1C3536B900A6A63D /* Build configuration list for PBXNativeTarget "CryptoPrephirencesTVOS" */;
 			buildPhases = (
-				560C716AB8CF8A4133256236 /* [CP] Check Pods Manifest.lock */,
 				C41368711C3536B900A6A63D /* Sources */,
 				C41368721C3536B900A6A63D /* Frameworks */,
 				C41368731C3536B900A6A63D /* Headers */,
 				C41368741C3536B900A6A63D /* Resources */,
-				D1FD35DB065E03B66528FA7B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -308,14 +330,16 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = phimage;
 				TargetAttributes = {
 					C41368491C35368300A6A63D = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0800;
 					};
 					C41368531C35368300A6A63D = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0800;
 					};
 					C41368681C35369D00A6A63D = {
 						CreatedOnToolsVersion = 7.2;
@@ -376,107 +400,14 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		266BE72602A41089386BADED /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CryptoPrephirencesOSX/Pods-CryptoPrephirencesOSX-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3120733A3F1B2DD07DD56FE8 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		4C1565FE25C5498AD9EEDADA /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		560C716AB8CF8A4133256236 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		D1FD35DB065E03B66528FA7B /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CryptoPrephirencesTVOS/Pods-CryptoPrephirencesTVOS-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FE11135E3B67C04C5C738913 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CryptoPrephirences/Pods-CryptoPrephirences-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		C41368451C35368300A6A63D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C413687F1C353BCE00A6A63D /* TransformationKey+Cipher.swift in Sources */,
-				C41F998C1C354A510046BA2C /* Plist+Cipher.swift in Sources */,
-				C41F99901C3554CB0046BA2C /* CryptoPrephirences.swift in Sources */,
+				C4BC15BE1D84552C00D10F10 /* CryptoPrephirences.swift in Sources */,
+				C4BC15C11D84552C00D10F10 /* Plist+Cipher.swift in Sources */,
+				C4BC15C41D84552C00D10F10 /* TransformationKey+Cipher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,9 +423,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C41368801C353BCE00A6A63D /* TransformationKey+Cipher.swift in Sources */,
-				C41F998D1C354A510046BA2C /* Plist+Cipher.swift in Sources */,
-				C41F99911C3554CB0046BA2C /* CryptoPrephirences.swift in Sources */,
+				C4BC15BF1D84552C00D10F10 /* CryptoPrephirences.swift in Sources */,
+				C4BC15C21D84552C00D10F10 /* Plist+Cipher.swift in Sources */,
+				C4BC15C51D84552C00D10F10 /* TransformationKey+Cipher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,9 +433,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C41368811C353BCE00A6A63D /* TransformationKey+Cipher.swift in Sources */,
-				C41F998E1C354A510046BA2C /* Plist+Cipher.swift in Sources */,
-				C41F99921C3554CB0046BA2C /* CryptoPrephirences.swift in Sources */,
+				C4BC15C01D84552C00D10F10 /* CryptoPrephirences.swift in Sources */,
+				C4BC15C31D84552C00D10F10 /* Plist+Cipher.swift in Sources */,
+				C4BC15C61D84552C00D10F10 /* TransformationKey+Cipher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,8 +463,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -580,8 +513,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -601,6 +536,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -610,13 +546,18 @@
 		};
 		C413685F1C35368300A6A63D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E672E528A1182EC3E343B4BC /* Pods-CryptoPrephirences.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CryptoPrephirences/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -624,58 +565,79 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		C41368601C35368300A6A63D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 32622DB6CC40290B32FEE29D /* Pods-CryptoPrephirences.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CryptoPrephirences/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fr.phimage.CryptoPrephirences;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		C41368621C35368300A6A63D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CryptoPrephirencesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fr.phimage.CryptoPrephirencesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		C41368631C35368300A6A63D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CryptoPrephirencesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fr.phimage.CryptoPrephirencesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		C413686F1C35369D00A6A63D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CA93D3C8ED3FFAD6A4E6B73D /* Pods-CryptoPrephirencesOSX.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = CryptoPrephirencesOSX/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -686,20 +648,25 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		C41368701C35369D00A6A63D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6A0182561BCE8A97DBD7B708 /* Pods-CryptoPrephirencesOSX.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = CryptoPrephirencesOSX/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -709,18 +676,24 @@
 				PRODUCT_NAME = CryptoPrephirences;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		C413687C1C3536B900A6A63D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7CB6899EAD5BB728171F6341 /* Pods-CryptoPrephirencesTVOS.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
 				INFOPLIST_FILE = CryptoPrephirencesTVOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -729,20 +702,26 @@
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.1;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Debug;
 		};
 		C413687D1C3536B900A6A63D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6A04BE68668D8EEC00D26572 /* Pods-CryptoPrephirencesTVOS.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
 				INFOPLIST_FILE = CryptoPrephirencesTVOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -750,8 +729,9 @@
 				PRODUCT_NAME = CryptoPrephirences;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.1;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Release;
 		};

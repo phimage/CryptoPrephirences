@@ -14,7 +14,7 @@
 [<img align="left" src="logo.png" hspace="20">](#logo) CryptoPrephirences allows you to protect your preferences against unauthorized access and modification.
 
 ```swift
-preferences["aKey", .Cipher(cipher)] = "myValueToEncrypt"
+preferences["aKey", .cipher(cipher)] = "myValueToEncrypt"
 ```
 It's build on top [Prephirences](https://github.com/phimage/Prephirences) and [CryptoSwift](https://github.com/krzyzanowskim/CryptoSwift)
 
@@ -39,12 +39,14 @@ pod "CryptoPrephirences"
 #### Store any NSCoding object compliant
 You can store one preference using
 ```swift
-var preferences = NSUserDefaults.standardUserDefaults()
-preferences["aKey", .Cipher(cipher)] = value
+var preferences = UserDefaults.standard
+preferences["aKey", .cipher(cipher)] = value
+preferences.set(value, forKey: "aKey", withCipher: cipher)
 ```
 #### Get the decrypted value
 ```swift
-let value = preferences[key, .Cipher(cipher)]
+let value = preferences[key, .cipher(cipher)]
+let value = preferences.object(forKey: key, withCipher: cipher)
 ```
 ### Encrypted Plist file
 Using this method key and values will be encrypted.
@@ -52,13 +54,13 @@ Using this method key and values will be encrypted.
 You can read and write your preferences to an encrypted file using :
 
 ```swift
-try anyPreferences.saveToEncryptedFile(filePath: "/path/to/file", cipher:cipher)
+try anyPreferences.saveTo(filePath: "/path/to/file", withCipher:cipher)
 
-try mutablePreferences.loadFromEncryptedFile(filePath: "/path/to/file", cipher: cipher)
+try mutablePreferences.loadFrom(filePath: "/path/to/file", withCipher: cipher)
 ```
 You can also initialize a `DictionaryPreferences` with `cipher`
 ```swift
-let pref = try DictionaryPreferences(filePath: filePath, cipher: cipher)
+let pref = try DictionaryPreferences(filePath: filePath, withCipher: cipher)
 ```
 
 ### Encrypted all values

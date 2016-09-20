@@ -31,22 +31,22 @@ class CryptoPrephirencesTests: XCTestCase {
     }
 
     func testSetGet() {
-        var prephirences = NSUserDefaults.standardUserDefaults()
+        var prephirences = UserDefaults.standard
         
         let key = "key"
-        let value = NSUUID()
+        let value = UUID()
         
-        prephirences[key, .Cipher(cipher)] = value
+        prephirences[key, .cipher(cipher)] = value
         
-        let get = prephirences[key, .Cipher(cipher)]
-        if let uuid = get as? NSUUID {
+        let get = prephirences[key, .cipher(cipher)]
+        if let uuid = get as? UUID {
             XCTAssertEqual(uuid, value)
         } else {
             XCTFail("failed to retrieve good object type: \(get)")
         }
 
         // check stored type
-        guard let data = prephirences[key] as? NSData else {
+        guard let data = prephirences[key] as? Data else {
             XCTFail("object is not data")
             return
         }
@@ -56,17 +56,17 @@ class CryptoPrephirencesTests: XCTestCase {
     }
     
     func testGetNil() {
-        var prephirences = NSUserDefaults.standardUserDefaults()
-        let key = "\(NSUUID())"
-        XCTAssertNil(prephirences[key, .Cipher(cipher)])
+        var prephirences = UserDefaults.standard
+        let key = "\(UUID())"
+        XCTAssertNil(prephirences[key, .cipher(cipher)])
     }
     
     func testSetNil() {
-        var prephirences = NSUserDefaults.standardUserDefaults()
-        let key = "\(NSUUID())"
-        prephirences[key, .Cipher(cipher)] = nil
+        var prephirences = UserDefaults.standard
+        let key = "\(UUID())"
+        prephirences[key, .cipher(cipher)] = nil
 
-        XCTAssertNil(prephirences[key, .Cipher(cipher)])
+        XCTAssertNil(prephirences[key, .cipher(cipher)])
     }
     
     func testDico() {
@@ -77,21 +77,21 @@ class CryptoPrephirencesTests: XCTestCase {
 
         
         do {
-            try dicoPref.saveToEncryptedFile(filePath, cipher: cipher)
+            try dicoPref.saveTo(filePath: filePath, withCipher: cipher)
         } catch let e {
             XCTFail("failed \(e)")
         }
         
         let newDicoPref: MutableDictionaryPreferences = [:]
         do {
-            try newDicoPref.loadFromEncryptedFile(filePath, cipher: cipher)
+            try newDicoPref.loadFrom(filePath: filePath, withCipher: cipher)
             XCTAssertEqualPreferences(newDicoPref, dicoPref)
         } catch let e {
             XCTFail("failed \(e)")
         }
         
         do {
-            let initDicoPref = try DictionaryPreferences(filePath: filePath, cipher: cipher)
+            let initDicoPref = try DictionaryPreferences(filePath: filePath, withCipher: cipher)
             XCTAssertEqualPreferences(initDicoPref, dicoPref)
         } catch let e {
             XCTFail("failed \(e)")
@@ -103,7 +103,7 @@ class CryptoPrephirencesTests: XCTestCase {
         var cryptoPreferences = MutableCryptoPrephirences(preferences: dicoPref, cipher: cipher)
         
         let tmp: MutableDictionaryPreferences = ["key": "value", "key2": "value2"]
-        cryptoPreferences.setObjectsForKeysWithDictionary(tmp.dictionary())
+        cryptoPreferences.set(dictionary: tmp.dictionary())
         
         XCTAssertEqualPreferences(cryptoPreferences, tmp)
 
@@ -120,7 +120,7 @@ class CryptoPrephirencesTests: XCTestCase {
         }
     }
 
-    func XCTAssertEqualPreferences(left: PreferencesType,_ right: PreferencesType) {
+    func XCTAssertEqualPreferences(_ left: PreferencesType,_ right: PreferencesType) {
         let ld = left.dictionary()
         let rd = right.dictionary()
         XCTAssertEqual(Array(ld.keys), Array(rd.keys), "not same keys")
@@ -130,7 +130,7 @@ class CryptoPrephirencesTests: XCTestCase {
                 XCTFail("not defined value for \(key)")
                 return
             }
-            if let rve = rvalue as? NSObject, lve = lvalue as? NSObject {
+            if let rve = rvalue as? NSObject, let lve = lvalue as? NSObject {
                 XCTAssertEqual(rve, lve)
             }
             else {
