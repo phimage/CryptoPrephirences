@@ -7,23 +7,22 @@
 //
 
 import XCTest
-@testable import CryptoPrephirences
 import Prephirences
 import CryptoSwift
 
-
+@testable import CryptoPrephirences
 
 class CryptoPrephirencesTests: XCTestCase {
     var cipher: Cipher!
 
     override func setUp() {
         super.setUp()
-        
-        guard let aes = try? AES(key: "secret0key000000", iv:"0123456789012345", blockMode: .CBC) else {
-            XCTFail("failed to create cipher")
-            return
+        do {
+            let aes = try AES(key: "secret0key000000", iv:"0123456789012345")
+            cipher = aes
+        } catch {
+            XCTFail("failed to create cipher \(error)")
         }
-        cipher = aes
     }
 
     override func tearDown() {
@@ -42,7 +41,7 @@ class CryptoPrephirencesTests: XCTestCase {
         if let uuid = get as? UUID {
             XCTAssertEqual(uuid, value)
         } else {
-            XCTFail("failed to retrieve good object type: \(get)")
+            XCTFail("failed to retrieve good object type: \(String(describing: get))")
         }
 
         // check stored type

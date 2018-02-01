@@ -25,7 +25,7 @@ import PackageDescription
 let package = Package(
     name: "CryptoPrephirences",
     dependencies: [
-        .Package(url: "https://github.com/phimage/Prephirences.git", majorVersion: 3),
-        .Package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", majorVersion: 0, minor: 6),
+        .package(url: "https://github.com/phimage/Prephirences.git", majorVersion: 4),
+        .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", majorVersion: 0, minor: 8),
         ]
 )
